@@ -12,9 +12,7 @@ class App extends Component {
     }
 
     async onSearchSubmit(term) {
-        console.log(term);
         const images = await searchImages(term);
-        console.log(images);
         this.setState({images: images});
     }
 
